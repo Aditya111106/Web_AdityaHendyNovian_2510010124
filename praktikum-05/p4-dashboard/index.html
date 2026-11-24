@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIAKAD Mini — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">SIAKAD Mini</div>
+    <nav class="nav-kanan" aria-label="Navigasi pengguna">
+      <button class="notif" aria-label="Notifikasi, 3 belum dibaca">
+        🔔<span class="badge">3</span>
+      </button>
+      <div class="profil">
+        <span class="avatar" aria-hidden="true">A</span>
+        <span>Admin Prodi</span>
+      </div>
+      <a href="#" class="logout">Logout</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+      <nav class="menu" aria-label="Menu utama">
+        <a href="#" class="aktif">Dashboard</a>
+        <a href="#">Data Mahasiswa</a>
+        <a href="#">Mata Kuliah</a>
+        <a href="#">Nilai</a>
+        <a href="#">Laporan</a>
+      </nav>
+      <a href="#" class="pengaturan">⚙ Pengaturan</a>
+    </aside>
+
+    <main class="konten">
+      <div class="judul-halaman">
+        <div>
+          <p class="eyebrow">SISTEM INFORMASI AKADEMIK</p>
+          <h1>Dashboard</h1>
+          <p class="subjudul">Ringkasan informasi akademik program studi.</p>
+        </div>
+        <span class="tanggal">Tahun Akademik 2026/2027</span>
+      </div>
+
+      <section class="statistik" aria-label="Statistik akademik">
+        <article class="kartu">
+          <span class="ikon ikon-biru">♙</span>
+          <h2>Mahasiswa Aktif</h2><p class="angka">1.248</p>
+          <p class="keterangan">Terdaftar saat ini</p>
+        </article>
+        <article class="kartu">
+          <span class="ikon ikon-hijau">▣</span>
+          <h2>Dosen</h2><p class="angka">62</p>
+          <p class="keterangan">Dosen aktif</p>
+        </article>
+        <article class="kartu">
+          <span class="ikon ikon-ungu">▤</span>
+          <h2>Mata Kuliah</h2><p class="angka">94</p>
+          <p class="keterangan">Ditawarkan semester ini</p>
+        </article>
+        <article class="kartu kartu-baru">
+          <span class="label-baru">Baru</span>
+          <span class="ikon ikon-oranye">◷</span>
+          <h2>Kelas Hari Ini</h2><p class="angka">18</p>
+          <p class="keterangan">Jadwal perkuliahan</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <div><h2>Pengumuman</h2><p>Informasi terbaru akademik</p></div>
+          <span class="status">Penting</span>
+        </div>
+        <p>Pengisian KRS semester genap dibuka mulai Senin. Pastikan data akademik sudah diverifikasi dosen PA.</p>
+      </section>
+
+      <section class="panel panel-jadwal">
+        <div class="panel-heading">
+          <div><h2>Jadwal Perkuliahan</h2><p>Contoh jadwal kegiatan hari ini</p></div>
+        </div>
+        <div class="tabel-scroll">
+          <table>
+            <thead><tr><th>Waktu</th><th>Mata Kuliah</th><th>Kelas</th><th>Ruangan</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>08.00–09.40</td><td>Pemrograman Web 1</td><td>TI-3A</td><td>Lab 1</td><td><span class="chip berlangsung">Berlangsung</span></td></tr>
+              <tr><td>10.00–11.40</td><td>Basis Data</td><td>TI-3B</td><td>R. 204</td><td><span class="chip berikutnya">Berikutnya</span></td></tr>
+              <tr><td>13.00–14.40</td><td>Struktur Data</td><td>TI-3A</td><td>R. 203</td><td><span class="chip terjadwal">Terjadwal</span></td></tr>
+              <tr><td>15.00–16.40</td><td>Jaringan Komputer</td><td>TI-3C</td><td>Lab 2</td><td><span class="chip terjadwal">Terjadwal</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">© 2026 Program Studi Teknik Informatika — FTI UNISKA</footer>
+</body>
+</html>

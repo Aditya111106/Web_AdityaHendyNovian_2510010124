@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2 — Flexbox Lab</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; margin: 24px; color: #212529; }
+    .lab {
+      width: 100%;
+      max-width: 1000px;
+      height: 240px;
+      outline: 3px dashed #1f5c99;
+      background: #e8eef5;
+      display: flex;
+      /* Ubah properti berikut satu per satu untuk percobaan. */
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0;
+    }
+    .item { padding: 16px; color: #fff; font-weight: 600; }
+    .a { background: #1e3a5f; }
+    .b { background: #b45309; }
+    .c { background: #2f6f4f; }
+    @media (max-width: 700px) {
+      .lab { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Percobaan 2 — Flexbox Lab</h1>
+  <p>Gunakan DevTools untuk mengubah justify-content, align-items, flex-direction, flex-wrap, flex-grow, order, margin, dan gap.</p>
+  <div class="lab">
+    <div class="item a">A</div>
+    <div class="item b">B dengan teks lebih panjang</div>
+    <div class="item c">C</div>
+  </div>
+</body>
+</html>
